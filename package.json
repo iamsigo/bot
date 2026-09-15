@@ -1,0 +1,19 @@
+{
+  "name": "persian-telegram-support-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "node --check src/index.js",
+    "db:migrate:local": "wrangler d1 migrations apply telegram-support --local",
+    "db:migrate:remote": "wrangler d1 migrations apply telegram-support --remote"
+  },
+  "dependencies": {
+    "hono": "4.13.7"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}

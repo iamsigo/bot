@@ -1,0 +1,19 @@
+name = "persian-telegram-support-bot"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "telegram-support-db"
+database_id = "14efa571-b1de-48b4-9fe1-01cb337c71f5"
+migrations_dir = "migrations"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "5f0129bf2776462ab9261264ee7682f5"
+
+[vars]
+APP_URL = "https://persian-telegram-support-bot.moshaveremad.workers.dev"
+BOT_USERNAME = "moshaveremad_bot"
+SUPER_ADMIN_IDS = "5412495597"
